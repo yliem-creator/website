@@ -1,0 +1,645 @@
+
+/* =================================
+   1. RESET DAN PENGATURAN DASAR
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #302820;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+.section {
+    padding: 90px 8%;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 12px 0 20px;
+}
+
+.tagline {
+    color: #aa8052;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+/* =================================
+   2. NAVBAR
+================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #aa8052;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #aa8052;
+}
+
+.nav-btn {
+    background: #aa8052;
+    color: white !important;
+    padding: 11px 22px;
+    border-radius: 4px;
+}
+
+.nav-btn:hover {
+    background: #80603e;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =================================
+   3. TOMBOL
+================================= */
+
+.btn {
+    display: inline-block;
+    background: #aa8052;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #80603e;
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   4. HERO SECTION
+================================= */
+
+.hero {
+    min-height: 600px;
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    background: #f7f3ed;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #aa8052;
+}
+
+.hero-text p {
+    color: #71675e;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* =================================
+   5. ABOUT SECTION
+================================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-text p {
+    color: #71675e;
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about-text li {
+    margin-bottom: 8px;
+    color: #80603e;
+}
+
+
+/* =================================
+   6. JUDUL SECTION
+================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #71675e;
+}
+
+
+/* =================================
+   7. FEATURES / KEUNGGULAN
+================================= */
+
+.features {
+    background: #f7f3ed;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    color: #aa8052;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #71675e;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* =================================
+   8. PRODUCT SECTION
+================================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.product-card {
+    border: 1px solid #eee8e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-card > img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info small {
+    color: #aa8052;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+.product-info h3 {
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.product-info p {
+    color: #71675e;
+    font-size: 14px;
+    min-height: 48px;
+}
+
+.price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.price strong {
+    color: #aa8052;
+    font-size: 16px;
+}
+
+.order-btn {
+    border: none;
+    background: #302820;
+    color: white;
+    padding: 9px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #aa8052;
+}
+
+
+/* =================================
+   9. TESTIMONIAL SECTION
+================================= */
+
+.testimonials {
+    background: #f7f3ed;
+}
+
+.testimonial-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stars {
+    color: #d9a441;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.testimonial-box > p {
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-box h3 {
+    margin-bottom: 4px;
+}
+
+.testimonial-box small {
+    color: #aa8052;
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.slider-buttons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #aa8052;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.slider-buttons button:hover {
+    background: #80603e;
+}
+
+
+/* =================================
+   10. CONTACT SECTION
+================================= */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-text p {
+    color: #71675e;
+    margin: 18px 0;
+}
+
+.contact-form {
+    background: #f7f3ed;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd2c5;
+    border-radius: 4px;
+    outline: none;
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #aa8052;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#form-message {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   11. FOOTER
+================================= */
+
+footer {
+    background: #302820;
+    color: white;
+    padding: 55px 8% 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-content .logo {
+    color: white;
+}
+
+.footer-content p {
+    color: #c9bdb0;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content a:not(.logo) {
+    display: block;
+    color: #c9bdb0;
+    font-size: 14px;
+    margin: 7px 0;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: #d9ad7d;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #51463b;
+    padding: 20px;
+    color: #c9bdb0;
+    font-size: 13px;
+}
+
+
+/* =================================
+   12. RESPONSIVE TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        gap: 30px;
+    }
+
+    .hero-image img {
+        height: 380px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   13. RESPONSIVE SMARTPHONE
+================================= */
+
+@media (max-width: 650px) {
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .navbar {
+        padding: 0 6%;
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background: white;
+        flex-direction: column;
+        gap: 22px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /* Layout */
+    .hero,
+    .about,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image img,
+    .about-image img {
+        height: 320px;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+
+    .feature-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-box {
+        padding: 25px 18px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+}
+
+
+/* =================================
+   14. SMARTPHONE KECIL
+================================= */
+
+@media (max-width: 400px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+}
