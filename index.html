@@ -1,11 +1,15 @@
 
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AURA SCENT - Toko Parfum Premium</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +18,7 @@
     <nav class="navbar">
         <a href="#home" class="logo">AURA<span>SCENT.</span></a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu">
+        <button class="menu-toggle" id="menu-toggle">
             ☰
         </button>
 
@@ -34,11 +38,14 @@
     <section class="hero" id="home">
         <div class="hero-text">
             <span class="tagline">DISCOVER YOUR SIGNATURE SCENT</span>
+
             <h1>Make Your Presence <span>Unforgettable.</span></h1>
+
             <p>
                 Temukan aroma terbaik yang mencerminkan kepribadianmu.
                 Parfum premium dengan aroma elegan untuk setiap momen.
             </p>
+
             <a href="#products" class="btn">Belanja Sekarang →</a>
         </div>
 
@@ -57,17 +64,21 @@
 
         <div class="about-text">
             <span class="tagline">ABOUT OUR BRAND</span>
+
             <h2>Aroma Istimewa, Identitas Berbeda.</h2>
+
             <p>
                 AURA SCENT adalah toko parfum yang menyediakan
                 berbagai pilihan aroma premium dengan karakter
                 unik, elegan, dan modern.
             </p>
+
             <p>
                 Kami percaya bahwa setiap orang memiliki aroma
                 khas yang dapat menjadi identitas dan meningkatkan
                 rasa percaya diri.
             </p>
+
             <ul>
                 <li>✓ Kualitas produk pilihan</li>
                 <li>✓ Aroma untuk berbagai suasana</li>
@@ -84,6 +95,7 @@
         </div>
 
         <div class="feature-grid">
+
             <div class="feature-card">
                 <div class="feature-icon">✦</div>
                 <h3>Premium Quality</h3>
@@ -101,11 +113,13 @@
                 <h3>Best Service</h3>
                 <p>Pelayanan ramah untuk pengalaman belanja terbaik.</p>
             </div>
+
         </div>
     </section>
 
     <!-- PRODUK -->
     <section class="products section" id="products">
+
         <div class="section-title">
             <span class="tagline">OUR COLLECTION</span>
             <h2>Discover Our Products</h2>
@@ -114,44 +128,65 @@
 
         <div class="product-grid">
 
+            <!-- PRODUK 1 -->
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600"
                      alt="Royal Oud">
+
                 <div class="product-info">
                     <small>MEN COLLECTION</small>
                     <h3>Royal Oud</h3>
                     <p>Aroma woody yang hangat dan elegan.</p>
+
                     <div class="price">
                         <strong>Rp299.000</strong>
-                        <button class="order-btn" data-product="Royal Oud">Pesan →</button>
+
+                        <button class="order-btn"
+                            onclick="pesanWhatsApp('Royal Oud', 'Rp299.000')">
+                            Pesan →
+                        </button>
                     </div>
                 </div>
             </div>
 
+            <!-- PRODUK 2 -->
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?w=600"
                      alt="Bloom Essence">
+
                 <div class="product-info">
                     <small>WOMEN COLLECTION</small>
                     <h3>Bloom Essence</h3>
                     <p>Aroma floral yang lembut dan menyegarkan.</p>
+
                     <div class="price">
                         <strong>Rp279.000</strong>
-                        <button class="order-btn" data-product="Bloom Essence">Pesan →</button>
+
+                        <button class="order-btn"
+                            onclick="pesanWhatsApp('Bloom Essence', 'Rp279.000')">
+                            Pesan →
+                        </button>
                     </div>
                 </div>
             </div>
 
+            <!-- PRODUK 3 -->
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600"
                      alt="Midnight Luxury">
+
                 <div class="product-info">
                     <small>UNISEX COLLECTION</small>
                     <h3>Midnight Luxury</h3>
                     <p>Aroma modern dengan karakter eksklusif.</p>
+
                     <div class="price">
                         <strong>Rp329.000</strong>
-                        <button class="order-btn" data-product="Midnight Luxury">Pesan →</button>
+
+                        <button class="order-btn"
+                            onclick="pesanWhatsApp('Midnight Luxury', 'Rp329.000')">
+                            Pesan →
+                        </button>
                     </div>
                 </div>
             </div>
@@ -161,66 +196,87 @@
 
     <!-- TESTIMONI -->
     <section class="testimonials section" id="testimonials">
+
         <div class="section-title">
             <span class="tagline">CUSTOMER REVIEWS</span>
             <h2>Apa Kata Pelanggan?</h2>
         </div>
 
         <div class="testimonial-box">
+
             <div class="stars">★★★★★</div>
+
             <p id="review-text">
                 "Wanginya elegan dan kemasannya sangat bagus.
                 Cocok digunakan untuk aktivitas sehari-hari."
             </p>
+
             <h3 id="review-name">Nadia Putri</h3>
+
             <small>Customer AURA SCENT</small>
 
             <div class="slider-buttons">
-                <button id="prev-review" aria-label="Ulasan sebelumnya">←</button>
-                <button id="next-review" aria-label="Ulasan berikutnya">→</button>
+                <button id="prev-review">←</button>
+                <button id="next-review">→</button>
             </div>
+
         </div>
     </section>
 
     <!-- KONTAK -->
     <section class="contact section" id="contact">
+
         <div class="contact-text">
             <span class="tagline">CONTACT US</span>
+
             <h2>Let's Find Your Signature Scent.</h2>
+
             <p>
                 Tertarik dengan produk kami?
-                Isi formulir pemesanan untuk mendapatkan informasi lebih lanjut.
+                Hubungi kami melalui WhatsApp untuk informasi lebih lanjut.
             </p>
 
             <p>📍 Tulungagung, Jawa Timur, Indonesia</p>
             <p>📞 0821-3306-5504</p>
             <p>✉ hello@aurascent.com</p>
+
+            <a href="https://wa.me/6282133065504"
+               target="_blank"
+               class="btn">
+                Hubungi WhatsApp →
+            </a>
         </div>
 
         <form id="order-form" class="contact-form">
             <h3>Form Pemesanan</h3>
 
             <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" placeholder="Masukkan nama">
+            <input type="text" id="name"
+                   placeholder="Masukkan nama" required>
 
             <label for="phone">Nomor HP</label>
-            <input type="tel" id="phone" placeholder="Contoh: 081234567890">
+            <input type="tel" id="phone"
+                   placeholder="Contoh: 081234567890" required>
 
             <label for="question">Pertanyaan / Pesanan</label>
             <textarea id="question" rows="5"
-                      placeholder="Tuliskan pesanan atau pertanyaan"></textarea>
+                      placeholder="Tuliskan pesanan atau pertanyaan"
+                      required></textarea>
 
-            <p id="form-message" role="status"></p>
-
-            <button type="submit" class="btn">Kirim Pesanan →</button>
+            <button type="submit" class="btn">
+                Kirim Pesanan →
+            </button>
         </form>
+
     </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
+
     <div class="footer-content">
+
         <div>
             <a href="#home" class="logo">AURA<span>SCENT.</span></a>
             <p>Discover your signature scent.</p>
@@ -244,18 +300,125 @@
         <div>
             <h3>Our Location</h3>
             <p>Tulungagung, Jawa Timur</p>
-            <a href="https://maps.google.com/?q=Tulungagung" target="_blank">
+            <a href="https://maps.google.com/?q=Tulungagung"
+               target="_blank">
                 Lihat Google Maps →
             </a>
         </div>
+
     </div>
 
     <div class="copyright">
         <p>© 2026 AURA SCENT. All Rights Reserved.</p>
     </div>
+
 </footer>
 
-<script src="script.js"></script>
+<!-- JAVASCRIPT -->
+<script>
+
+// NOMOR WHATSAPP TOKO
+const nomorWhatsApp = "6282133065504";
+
+// FUNGSI PESAN PRODUK
+function pesanWhatsApp(namaProduk, hargaProduk) {
+
+    const pesan =
+`Halo AURA SCENT, saya tertarik memesan produk:
+
+Nama Produk: ${namaProduk}
+Harga: ${hargaProduk}
+
+Apakah produk ini masih tersedia?`;
+
+    const url =
+        "https://wa.me/" + nomorWhatsApp +
+        "?text=" + encodeURIComponent(pesan);
+
+    window.open(url, "_blank");
+}
+
+// FORM PEMESANAN
+document.getElementById("order-form")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const nama = document.getElementById("name").value;
+    const telepon = document.getElementById("phone").value;
+    const pertanyaan = document.getElementById("question").value;
+
+    const pesan =
+`Halo AURA SCENT!
+
+Nama: ${nama}
+Nomor HP: ${telepon}
+
+Pesanan / Pertanyaan:
+${pertanyaan}`;
+
+    const url =
+        "https://wa.me/" + nomorWhatsApp +
+        "?text=" + encodeURIComponent(pesan);
+
+    window.open(url, "_blank");
+
+});
+
+// MENU RESPONSIVE
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", function() {
+    navMenu.classList.toggle("active");
+});
+
+// TUTUP MENU SETELAH DIKLIK
+document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", function() {
+        navMenu.classList.remove("active");
+    });
+});
+
+// SLIDER TESTIMONI
+const reviews = [
+    {
+        text: "Wanginya elegan dan kemasannya sangat bagus. Cocok digunakan untuk aktivitas sehari-hari.",
+        name: "Nadia Putri"
+    },
+    {
+        text: "Produknya bagus, aromanya tahan lama dan sangat nyaman digunakan.",
+        name: "Andi Pratama"
+    },
+    {
+        text: "Pelayanannya ramah dan pilihan parfumnya sangat menarik.",
+        name: "Salsa Amelia"
+    }
+];
+
+let currentReview = 0;
+
+function tampilkanReview() {
+    document.getElementById("review-text").textContent =
+        '"' + reviews[currentReview].text + '"';
+
+    document.getElementById("review-name").textContent =
+        reviews[currentReview].name;
+}
+
+document.getElementById("next-review")
+.addEventListener("click", function() {
+    currentReview = (currentReview + 1) % reviews.length;
+    tampilkanReview();
+});
+
+document.getElementById("prev-review")
+.addEventListener("click", function() {
+    currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+    tampilkanReview();
+});
+
+</script>
+
 </body>
 </html>
-
